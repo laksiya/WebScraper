@@ -17,13 +17,13 @@ Examples using Requests from command:
   
 > r.text
 
->'46075364-150c-4e1a-b0f7-6475ab9d44a2'
+>'10002'
 
 > r=requests.get('http://localhost:5000/retrieve/46075364-150c-4e1a-b0f7-6475ab9d44a2')
   
 > r.text
 
->'{"date":"2021-08-17 15:29:09.943488","title":"[<title>Quotes to Scrape</title>]","url":"https://quotes.toscrape.com"}\n'
+>'{"contents": ".....", "date":"2021-08-17 15:29:09.943488","title":"[<title>Quotes to Scrape</title>]","url":"https://quotes.toscrape.com"}\n'
 
 
 ## Comments
