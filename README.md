@@ -1,7 +1,7 @@
 # Work Sample
 ## Description
 This project contains a Flask App API with two endpoints:
-* POST /scrape - Send POST request with a payload containing URL. See formatting example under 'How to use it'. The endpoint will scrape the page if available, store the scraped content as a JSON and return the ID to the corresponding entry. Endpoint will return "Inconsistent URL - try again" if URL is not correctly formatted.
+* POST /crawl - Send POST request with a payload containing URL. See formatting example under 'How to use it'. The endpoint will scrape the page if available, store the scraped content as a JSON and return the ID to the corresponding entry. Endpoint will return "Inconsistent URL - try again" if URL is not correctly formatted.
 
 * GET /retrieve/<ID> - Get the corresponding JSON with scraped content for a given ID in the query. If there is no content for saved for the given ID, an empty JSON will be returned.
 
@@ -13,7 +13,7 @@ Download folder. Enter virtual enviroment and ensure all requirements are instal
 
 Examples using Requests from command:
 
-> r=requests.post('http://localhost:5000/scrape', data={'URL':'https://quotes.toscrape.com'})
+> r=requests.post('http://localhost:5000/crawl', data={'URL':'https://quotes.toscrape.com'})
   
 > r.text
 
